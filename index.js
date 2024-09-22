@@ -1,7 +1,7 @@
 import express from "express";
-import listaRouter from "./routes/listRouter.js";
+import listaRouter from "./src/routes/listRouter.js";
 import "dotenv/config"
-import "./db/dbConnect.js"
+import "./src/db/dbConnect.js"
 import cors from "cors"
 
 const app = express();
