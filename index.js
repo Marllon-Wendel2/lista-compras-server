@@ -5,6 +5,11 @@ import "./src/db/dbConnect.js"
 import cors from "cors"
 
 const app = express();
+const corsOptions = {
+    origin: '*', // Substitua pelo domínio permitido
+    methods: 'GET,POST,PUT,DELETE',
+    optionsSuccessStatus: 204
+  };
 
 app.use(cors())
 app.use(express.json());
