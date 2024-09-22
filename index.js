@@ -8,6 +8,7 @@ const app = express();
 const corsOptions = {
     origin: 'https://lista-compras-cyan.vercel.app/',
     methods: 'GET,POST,PUT,DELETE',
+    preflightContinue: false,
     optionsSuccessStatus: 204
   };
 
